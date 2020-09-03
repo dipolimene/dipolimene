@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "dipolimene.com",
+  "Id": "4ddf78bd-4205-407f-9e66-55e349598d1d"
+}
