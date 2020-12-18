@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      sudo apt-get remove azure-cli
+      sudo apt-get install azure-cli=2.15.1-1~focal
+      az version
