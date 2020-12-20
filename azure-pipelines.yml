@@ -13,4 +13,4 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: sudo apt-get install azure-cli=2.15.1-1~focal
+- script: sudo apt-get install azure-cli=2.5.1-1~buster
