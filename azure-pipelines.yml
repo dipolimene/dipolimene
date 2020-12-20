@@ -13,4 +13,4 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: choco install azure-cli --version=2.15.1
+- script: sudo apt-get install azure-cli=2.15.1-1~focal
