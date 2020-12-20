@@ -13,10 +13,4 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      sudo apt-get remove azure-cli
-      sudo apt-get install azure-cli=2.15.1
-      az version
+- script: choco install azure-cli --version=2.15.1
